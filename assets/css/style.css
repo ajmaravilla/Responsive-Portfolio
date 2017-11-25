@@ -73,22 +73,31 @@
     .header{
       background: #ffffff;
       text-align: center;
-      padding-bottom: 50px;
+      padding-bottom: 0px;
     }
 
     #main-container{
       background-color:grey;
     }
 
+    .wrapper {
+  /* Box-model */
+  width: 100%;
+
+  /* Positioning */
+  margin: 40px auto;
+}
+
     .info{
-      width:646px;
+      width:600px;
       display:inline-block;
       vertical-align: top;
       margin-right: 50px;
       text-align: left;
-      background: #fff;
+      background: #FFF;
       margin-top: 20px;
       margin-bottom: 20px;
+      padding: 25px;
     }
 
     .info img{
@@ -385,6 +394,7 @@
         text-align: left;
         background: #fff;
         margin-top: 20px;
+        padding: 25px;
       }
     
       a{
@@ -405,3 +415,46 @@
     background: #4aaaa5;
     padding: 20px 30px;
     margin: auto;
+  }
+
+    /*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+  @media screen and (max-width: 980px) {
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 1000px;
+  }
+  /*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: #333;
+  }
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 1000px;
+  }
+}
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 640px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: #333;
+  }
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 1000px;
+  }
+}
+}
